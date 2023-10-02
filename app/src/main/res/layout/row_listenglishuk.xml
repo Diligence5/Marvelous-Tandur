@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listenglishukRowModel" type="com.marveloustandur.app.modules.language.data.model.ListenglishukRowModel"/>
+    </data>
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:drawableEnd="@drawable/img_checkmark_green_a700"
+        android:drawablePadding="@dimen/_30pxh" android:ellipsize="end"
+        android:fontFamily="@font/plus_jakarta_sans"
+        android:id="@+id/checkBoxEnglishuk"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:letterSpacing="0.0"
+        android:lineSpacingExtra="@dimen/_5pxh"
+        android:singleLine="true" android:text="@string/lbl_english_uk"
+        android:textColor="@color/{&quot;name&quot;:&quot;gray_900&quot;}"
+        android:textFontWeight="600" android:textSize="@dimen/_16pxh"
+        android:textStyle="bold" tools:text="@string/lbl_english_uk"/>
+</layout>

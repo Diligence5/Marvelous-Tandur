@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="jobTypeVM" type="com.marveloustandur.app.modules.jobtype.data.viewmodel.JobTypeVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearColumnchoosejobtype"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle{&quot;name&quot;:&quot;white_A700_01&quot;}">
+        <LinearLayout android:id="@+id/linearJobtype"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_24pxh"
+            android:paddingStart="@dimen/_24pxh" android:paddingTop="@dimen/_13pxv">
+            <ImageView android:id="@+id/imageImage"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_24pxh"
+                android:layout_width="@dimen/_24pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group162799"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_group162799"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtChoosejobtype"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="@dimen/_7pxh"
+                android:singleLine="true"
+                android:text="@{jobTypeVM.jobTypeModel.txtChoosejobtype}"
+                style="@style/txtPlusJakartaSansbold24" tools:text="@string/lbl_choose_job_type"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtAreyoulooking"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.0"
+                android:lineSpacingExtra="@dimen/_8pxh"
+                android:text="@{jobTypeVM.jobTypeModel.txtAreyoulooking}"
+                style="@style/txtPlusJakartaSansmedium14" tools:text="@string/msg_are_you_looking"/>
+            <LinearLayout android:gravity="center_vertical"
+                android:id="@+id/linearRowworkOne"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearColumnworkOne"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_24pxv"
+                    android:paddingEnd="@dimen/_18pxh"
+                    android:paddingStart="@dimen/_18pxh"
+                    android:paddingTop="@dimen/_24pxv" style="@style/groupStylenameonPrimaryContaineropacity1cornerRadius_5">
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_name_primary_radius_32"
+                        android:id="@+id/btnWorkOne"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_64pxh"
+                        android:layout_width="@dimen/_64pxh"
+                        android:paddingHorizontal="@dimen/_16pxh"
+                        android:paddingVertical="@dimen/_16pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_work" tools:ignore="ContentDescription"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtFindajob"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:letterSpacing="0.0"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:singleLine="true"
+                        android:text="@{jobTypeVM.jobTypeModel.txtFindajob}"
+                        style="@style/txtPlusJakartaSanssemibold16_1" tools:text="@string/lbl_find_a_job"/>
+                    <TextView android:gravity="center_horizontal"
+                        android:id="@+id/txtItseasytofind"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:letterSpacing="0.0"
+                        android:lineSpacingExtra="@dimen/_8pxh"
+                        android:text="@{jobTypeVM.jobTypeModel.txtItseasytofind}"
+                        style="@style/txtPlusJakartaSansmedium12" tools:text="@string/msg_it_s_easy_to_find"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearColumnprofile"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_24pxv"
+                    android:paddingEnd="@dimen/_14pxh"
+                    android:paddingStart="@dimen/_14pxh"
+                    android:paddingTop="@dimen/_24pxv" style="@style/groupStylenameonPrimaryContaineropacity1cornerRadius_6">
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_name_orange_500_radius_32"
+                        android:id="@+id/btnProfileOne"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_64pxh"
+                        android:layout_width="@dimen/_64pxh"
+                        android:paddingHorizontal="@dimen/_16pxh"
+                        android:paddingVertical="@dimen/_16pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_profile" tools:ignore="ContentDescription"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtFindaemployee"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:letterSpacing="0.0"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:singleLine="true"
+                        android:text="@{jobTypeVM.jobTypeModel.txtFindaemployee}"
+                        style="@style/txtPlusJakartaSanssemibold16_1" tools:text="@string/lbl_find_a_employee"/>
+                    <TextView android:gravity="center_horizontal"
+                        android:id="@+id/txtItseasytofind1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:letterSpacing="0.0"
+                        android:lineSpacingExtra="@dimen/_8pxh"
+                        android:text="@{jobTypeVM.jobTypeModel.txtItseasytofind1}"
+                        style="@style/txtPlusJakartaSansmedium12" tools:text="@string/msg_it_s_easy_to_find2"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/rectangle_bg_name_primary_radius_24"
+            android:ellipsize="end"
+            android:fontFamily="@font/plus_jakarta_sans"
+            android:gravity="center" android:id="@+id/btnContinue"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_56pxv"
+            android:layout_width="@dimen/_327pxh"
+            android:letterSpacing="0.0"
+            android:lineSpacingExtra="@dimen/_5pxh"
+            android:paddingBottom="@dimen/_17pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_17pxv" android:singleLine="true"
+            android:text="@string/lbl_continue"
+            android:textAllCaps="false"
+            android:textColor="@color/{&quot;name&quot;:&quot;gray_50_01&quot;}"
+            android:textFontWeight="600"
+            android:textSize="@dimen/_16pxh" android:textStyle="bold" tools:text="@string/lbl_continue"/>
+    </LinearLayout>
+</layout>

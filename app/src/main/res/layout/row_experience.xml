@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="experienceRowModel" type="com.marveloustandur.app.modules.experiencesetting.data.model.ExperienceRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowuserOne"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_name_gray_100_radius_8"
+            android:id="@+id/btnUserOne"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/_48pxh"
+            android:layout_width="@dimen/_48pxh"
+            android:paddingHorizontal="@dimen/_8pxh"
+            android:paddingVertical="@dimen/_8pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_user" tools:ignore="ContentDescription"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearNamedescription"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtInternshipuiux"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.0"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@{experienceRowModel.txtInternshipuiux}"
+                style="@style/txtPlusJakartaSanssemibold14" tools:text="@string/msg_internship_ui_ux"/>
+            <LinearLayout android:id="@+id/linearRowsmalllabelre"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:id="@+id/txtSmalllabelregul1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.0"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:singleLine="true"
+                    android:text="@{experienceRowModel.txtSmalllabelregul1}"
+                    style="@style/txtPlusJakartaSansmedium12" tools:text="@string/lbl_shopee_sg"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSmalllabelregul2"
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:letterSpacing="0.0"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:singleLine="true"
+                    android:text="@{experienceRowModel.txtSmalllabelregul2}"
+                    style="@style/txtPlusJakartaSansmedium12" tools:text="@string/lbl"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtZipcode"
+                    android:layout_gravity="top"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:letterSpacing="0.0"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:singleLine="true"
+                    android:text="@{experienceRowModel.txtZipcode}"
+                    style="@style/txtPlusJakartaSansmedium12" tools:text="@string/lbl_2019"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

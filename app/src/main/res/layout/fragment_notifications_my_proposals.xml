@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="notificationsMyProposalsVM" type="com.marveloustandur.app.modules.notificationsmyproposals.data.viewmodel.NotificationsMyProposalsVM"/>
+    </data>
+    <androidx.core.widget.NestedScrollView android:clipToPadding="false"
+        android:fillViewport="true"
+        android:id="@+id/scrollViewScrollview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStyle{&quot;name&quot;:&quot;white_A700_01&quot;}">
+        <LinearLayout android:id="@+id/linearColumn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <LinearLayout android:id="@+id/linearColumnapplicati"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:id="@+id/linearRowapplications"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:gravity="bottom"
+                        android:id="@+id/txtApplicationstat"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:letterSpacing="0.0"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:singleLine="true"
+                        android:text="@{notificationsMyProposalsVM.notificationsMyProposalsModel.txtApplicationstat}"
+                        style="@style/txtPlusJakartaSansbold16" tools:text="@string/msg_application_status"/>
+                    <ImageView android:id="@+id/imageArrowupOne"
+                        android:layout_gravity="top"
+                        android:layout_height="@dimen/_24pxh"
+                        android:layout_width="@dimen/_24pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowup"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowup"/>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/recyclerListlocation"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_17pxh}" tools:itemCount="3" tools:listitem="@layout/row_listlocation"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>
