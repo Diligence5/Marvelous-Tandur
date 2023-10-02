@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listlocationRowModel" type="com.marveloustandur.app.modules.notificationsmyproposals.data.model.ListlocationRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowlocationOne"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_name_gray_100_radius_8"
+            android:id="@+id/btnLocationOne"
+            android:layout_height="@dimen/_48pxh"
+            android:layout_width="@dimen/_48pxh"
+            android:paddingHorizontal="@dimen/_7pxh"
+            android:paddingVertical="@dimen/_7pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_location" tools:ignore="ContentDescription"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnsenioruiu"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSenioruiuxdesig"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.0"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@{listlocationRowModel.txtSenioruiuxdesig}"
+                style="@style/txtPlusJakartaSansbold14" tools:text="@string/msg_senior_ui_ux_designer"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSmalllabelregul"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.0"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@{listlocationRowModel.txtSmalllabelregul}"
+                style="@style/txtPlusJakartaSanssemibold12_1" tools:text="@string/lbl_shell"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/rectangle_bg_name_green_50_radius_4"
+                android:ellipsize="end" android:fontFamily="@font/inter"
+                android:gravity="center" android:id="@+id/btnOpened"
+                android:layout_height="@dimen/_28pxv"
+                android:layout_width="@dimen/_78pxh"
+                android:letterSpacing="0.0"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:paddingBottom="@dimen/_6pxv"
+                android:paddingEnd="@dimen/_16pxh"
+                android:paddingStart="@dimen/_16pxh"
+                android:paddingTop="@dimen/_6pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_opened"
+                android:textAllCaps="false"
+                android:textColor="@color/{&quot;name&quot;:&quot;green_A700&quot;}"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_12pxh"
+                android:textStyle="normal" tools:text="@string/lbl_opened"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

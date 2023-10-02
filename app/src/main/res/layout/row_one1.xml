@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="one1RowModel" type="com.marveloustandur.app.modules.notificationsgeneral.data.model.One1RowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_vertical"
+        android:id="@+id/linearRowlogoOne"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_name_gray_100_radius_16"
+            android:id="@+id/btnLogoOne"
+            android:layout_height="@dimen/_32pxh"
+            android:layout_width="@dimen/_32pxh"
+            android:paddingHorizontal="@dimen/_4pxh"
+            android:paddingVertical="@dimen/_4pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_frame162722" tools:ignore="ContentDescription"/>
+        <FrameLayout android:id="@+id/frameStacktime"
+            android:layout_height="@dimen/_90pxv" android:layout_width="@dimen/_283pxh">
+            <TextView android:ellipsize="end" android:id="@+id/txtTime"
+                android:layout_gravity="top|end"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.0"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@{one1RowModel.txtTime}"
+                style="@style/txtPlusJakartaSansmedium12_4" tools:text="@string/lbl_32_min_ago"/>
+            <LinearLayout android:id="@+id/linearColumnjunioruid"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtJunioruidesigne"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.0"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:singleLine="true"
+                    android:text="@{one1RowModel.txtJunioruidesigne}"
+                    style="@style/txtPlusJakartaSansbold14" tools:text="@string/msg_junior_ui_designer"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtShopeesg"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:letterSpacing="0.0"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:singleLine="true"
+                    android:text="@{one1RowModel.txtShopeesg}"
+                    style="@style/txtPlusJakartaSansmedium12" tools:text="@string/lbl_shopee_sg"/>
+                <TextView android:id="@+id/txtLoremipsumdolor"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.0"
+                    android:lineSpacingExtra="@dimen/_8pxh"
+                    android:text="@{one1RowModel.txtLoremipsumdolor}"
+                    style="@style/txtPlusJakartaSansmedium12_5" tools:text="@string/msg_lorem_ipsum_dolor7"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>
