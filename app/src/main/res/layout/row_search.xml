@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="searchRowModel" type="com.marveloustandur.app.modules.search.data.model.SearchRowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_vertical"
+        android:id="@+id/linearRowlightbulb"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_16pxh"
+        android:paddingVertical="@dimen/_16pxv" style="@style/groupStyle{&quot;name&quot;:&quot;onPrimaryContainer&quot;,&quot;opacity&quot;:1}cornerRadius">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_name_gray_100_radius_8"
+            android:id="@+id/btnLightbulbOne"
+            android:layout_height="@dimen/_48pxh"
+            android:layout_width="@dimen/_48pxh"
+            android:paddingHorizontal="@dimen/_7pxh"
+            android:paddingVertical="@dimen/_7pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_lightbulb" tools:ignore="ContentDescription"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnsenioruiu"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSenioruiuxdesig"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.0"
+                android:lineSpacingExtra="@dimen/_5pxh"
+                android:singleLine="true"
+                android:text="@{searchRowModel.txtSenioruiuxdesig}"
+                style="@style/txtPlusJakartaSansbold16" tools:text="@string/msg_senior_ui_ux_designer"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtShell"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.0"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@{searchRowModel.txtShell}"
+                style="@style/txtPlusJakartaSanssemibold12_1" tools:text="@string/lbl_shell"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtPrice"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.0"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@{searchRowModel.txtPrice}"
+                style="@style/txtPlusJakartaSansmedium12_3" tools:text="@string/msg_560_12_000_month"/>
+            <LinearLayout android:id="@+id/linearRowfulltime"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:background="@drawable/rectangle_bg_name_gray_100_radius_8"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/plus_jakarta_sans"
+                    android:gravity="center"
+                    android:id="@+id/btnFulltime"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_28pxv"
+                    android:layout_width="@dimen/_70pxh"
+                    android:letterSpacing="0.0"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:paddingBottom="@dimen/_6pxv"
+                    android:paddingEnd="@dimen/_12pxh"
+                    android:paddingStart="@dimen/_12pxh"
+                    android:paddingTop="@dimen/_6pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_fulltime"
+                    android:textAllCaps="false"
+                    android:textColor="@color/{&quot;name&quot;:&quot;blue_gray_400&quot;}"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_12pxh"
+                    android:textStyle="bold" tools:text="@string/lbl_fulltime"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:background="@drawable/rectangle_bg_name_gray_100_radius_8"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/plus_jakarta_sans"
+                    android:gravity="center"
+                    android:id="@+id/btnTwoDaysAgo"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_28pxv"
+                    android:layout_width="@dimen/_103pxh"
+                    android:letterSpacing="0.0"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:paddingBottom="@dimen/_6pxv"
+                    android:paddingEnd="@dimen/_12pxh"
+                    android:paddingStart="@dimen/_12pxh"
+                    android:paddingTop="@dimen/_6pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_two_days_ago"
+                    android:textAllCaps="false"
+                    android:textColor="@color/{&quot;name&quot;:&quot;blue_gray_400&quot;}"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_12pxh"
+                    android:textStyle="bold" tools:text="@string/lbl_two_days_ago"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageImage"
+            android:layout_height="@dimen/_24pxh"
+            android:layout_width="@dimen/_24pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_bookmark"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_bookmark"/>
+    </LinearLayout>
+</layout>

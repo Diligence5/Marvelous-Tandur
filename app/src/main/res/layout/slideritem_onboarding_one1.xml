@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="imageSliderSliderthebestapModel" type="com.marveloustandur.app.modules.onboardingone.data.model.ImageSliderSliderthebestapModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearContent"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_32pxv"
+        android:paddingEnd="@dimen/_39pxh"
+        android:paddingStart="@dimen/_39pxh"
+        android:paddingTop="@dimen/_32pxv" style="@style/groupStylenameonPrimaryContaineropacity1cornerRadius_3">
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtThebestappfor"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:text="@{imageSliderSliderthebestapModel.txtThebestappfor}"
+            style="@style/txtPlusJakartaSansbold24" tools:text="@string/msg_the_best_app_for"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtSemperincursus"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.0"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:text="@{imageSliderSliderthebestapModel.txtSemperincursus}"
+            style="@style/txtPlusJakartaSanssemibold14_2" tools:text="@string/msg_semper_in_cursus"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/rectangle_bg_name_primary_radius_24"
+            android:ellipsize="end"
+            android:fontFamily="@font/plus_jakarta_sans"
+            android:gravity="center" android:id="@+id/btnLabel"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_56pxv"
+            android:layout_width="@dimen/_101pxh"
+            android:letterSpacing="0.0"
+            android:lineSpacingExtra="@dimen/_5pxh"
+            android:paddingBottom="@dimen/_17pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_17pxv" android:singleLine="true"
+            android:text="@string/lbl_next" android:textAllCaps="false"
+            android:textColor="@color/{&quot;name&quot;:&quot;gray_50_01&quot;}"
+            android:textFontWeight="600"
+            android:textSize="@dimen/_16pxh" android:textStyle="bold" tools:text="@string/lbl_next"/>
+    </LinearLayout>
+</layout>

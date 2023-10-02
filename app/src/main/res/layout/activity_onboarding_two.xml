@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="onboardingTwoVM" type="com.marveloustandur.app.modules.onboardingtwo.data.viewmodel.OnboardingTwoVM"/>
+    </data>
+    <LinearLayout android:gravity="end"
+        android:id="@+id/linearOnboardingTwo"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_18pxv"
+        android:paddingEnd="@dimen/_24pxh"
+        android:paddingStart="@dimen/_24pxh"
+        android:paddingTop="@dimen/_18pxv" style="@style/groupStyle">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtMediumlabelmedi"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:letterSpacing="0.0"
+            android:lineSpacingExtra="@dimen/_4pxh"
+            android:singleLine="true"
+            android:text="@{onboardingTwoVM.onboardingTwoModel.txtMediumlabelmedi}"
+            style="@style/txtPlusJakartaSanssemibold14_1" tools:text="@string/lbl_skip"/>
+        <FrameLayout android:id="@+id/frameStack"
+            android:layout_height="@dimen/_672pxv" android:layout_width="@dimen/_327pxh">
+            <ImageView android:id="@+id/imageImageOne"
+                android:layout_gravity="top|center"
+                android:layout_height="@dimen/_369pxh"
+                android:layout_width="@dimen/_306pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_image_369x306}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image_369x306"/>
+            <FrameLayout android:id="@+id/frameStackbetterfutu"
+                android:layout_gravity="bottom|center"
+                android:layout_height="@dimen/_335pxv" android:layout_width="@dimen/_327pxh">
+                <com.asksira.loopingviewpager.LoopingViewPager
+                    android:id="@+id/imageSliderSliderbetterfut"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_335pxv"
+                    android:layout_width="match_parent"
+                    app:autoScroll="true" app:isInfinite="true" app:scrollInterval="5000"/>
+
+                <com.asksira.loopingviewpager.indicator.CustomShapePagerIndicator
+                    android:id="@+id/indicatorMenuOne"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    app:drawable_normal="@drawable/indicator_unselected_bg_name_primary_opacity_0_41_radius_8"
+                    app:drawable_selected="@drawable/indicator_selected_bg_name_primary_radius_8"
+                    app:indicator_size="@dimen/_10pxh" app:indicator_spacing="@dimen/_12pxh"/>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

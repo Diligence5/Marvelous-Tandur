@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homeRowModel" type="com.marveloustandur.app.modules.home.data.model.HomeRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnspacer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_16pxh"
+        android:paddingVertical="@dimen/_16pxv" style="@style/groupStyle{&quot;name&quot;:&quot;onPrimaryContainer&quot;,&quot;opacity&quot;:1}cornerRadius">
+        <LinearLayout android:id="@+id/linearRowdigitalmarke"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageButton
+                android:background="@drawable/rectangle_bg_name_gray_100_radius_8"
+                android:id="@+id/btnIconbutton"
+                android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_48pxh"
+                android:layout_width="@dimen/_48pxh"
+                android:paddingHorizontal="@dimen/_8pxh"
+                android:paddingVertical="@dimen/_8pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_group_primary" tools:ignore="ContentDescription"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumndigitalma"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDigitalmarketin"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.0"
+                    android:lineSpacingExtra="@dimen/_5pxh"
+                    android:singleLine="true"
+                    android:text="@{homeRowModel.txtDigitalmarketin}"
+                    style="@style/txtPlusJakartaSansbold16" tools:text="@string/msg_digital_marketing"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMotorola"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:letterSpacing="0.0"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:singleLine="true"
+                    android:text="@{homeRowModel.txtMotorola}"
+                    style="@style/txtPlusJakartaSanssemibold12_1" tools:text="@string/lbl_motorola"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/frameSpacer"
+                android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+            <ImageView android:id="@+id/imageDigital"
+                android:layout_gravity="top"
+                android:layout_height="@dimen/_24pxh"
+                android:layout_width="@dimen/_24pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_bookmark"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_bookmark"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtPrice"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:letterSpacing="0.0"
+            android:lineSpacingExtra="@dimen/_4pxh"
+            android:singleLine="true"
+            android:text="@{homeRowModel.txtPrice}"
+            style="@style/txtPlusJakartaSansmedium12_3" tools:text="@string/msg_560_12_000_month"/>
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearRowfulltime"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/rectangle_bg_name_gray_100_radius_8"
+                android:ellipsize="end"
+                android:fontFamily="@font/plus_jakarta_sans"
+                android:gravity="center" android:id="@+id/btnFulltime"
+                android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_28pxv"
+                android:layout_width="@dimen/_70pxh"
+                android:letterSpacing="0.0"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:paddingBottom="@dimen/_6pxv"
+                android:paddingEnd="@dimen/_12pxh"
+                android:paddingStart="@dimen/_12pxh"
+                android:paddingTop="@dimen/_6pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_fulltime"
+                android:textAllCaps="false"
+                android:textColor="@color/{&quot;name&quot;:&quot;blue_gray_400&quot;}"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_12pxh"
+                android:textStyle="bold" tools:text="@string/lbl_fulltime"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/rectangle_bg_name_gray_100_radius_8"
+                android:ellipsize="end"
+                android:fontFamily="@font/plus_jakarta_sans"
+                android:gravity="center" android:id="@+id/btnTwoDaysAgo"
+                android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_28pxv"
+                android:layout_width="@dimen/_103pxh"
+                android:letterSpacing="0.0"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:paddingBottom="@dimen/_6pxv"
+                android:paddingEnd="@dimen/_12pxh"
+                android:paddingStart="@dimen/_12pxh"
+                android:paddingTop="@dimen/_6pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_two_days_ago"
+                android:textAllCaps="false"
+                android:textColor="@color/{&quot;name&quot;:&quot;blue_gray_400&quot;}"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_12pxh"
+                android:textStyle="bold" tools:text="@string/lbl_two_days_ago"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
